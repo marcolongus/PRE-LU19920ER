@@ -24,7 +24,7 @@ Physical Review E (2025)
 Below is the minimal explanation of each data file and its columns:
 
 - **Fig1_panel_b.txt**  
-  - col 1: ⟨v⟩   
+  - col 1: ⟨v⟩ (average active speed)   
   - col 2: ⟨n_R⟩ for single-value distribution  
   - col 3: ⟨n_R⟩ for exponential distribution  
   - col 4: ⟨n_R⟩ for power-law distribution  
@@ -36,13 +36,13 @@ Below is the minimal explanation of each data file and its columns:
   - col 4: ⟨n_R⟩ (curve power-law distribution)  
 
 - **Fig1_panel_d.txt**  
-  - col 1: ⟨v⟩ (average active speed)
+  - col 1: ⟨v⟩ (normalized critical average active speed)
   - col 2: ⟨n_R⟩ (simulation)  
   - col 3: ⟨n_R⟩ (theory)  
 
 - **Fig2_panel_a.txt**  
   - col 1: fraction of vaccinated population (f = N_v / N)  
-  - col 2–7: normalized epidemic size for each distribution (single, exponential, power-law, …)  
+  - col 2–7: normalized epidemic size for each distribution (single, exponential, power-law)  
 
 - **Fig2_panel_b.txt**  
   - col 1: N_v (number of vaccinated agents)  
