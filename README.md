@@ -1,13 +1,10 @@
-# PRE-LU19920ER
-Repository containing the data files (.txt) and scripts used to generate the figures in "Spreading processes on heterogeneous active systems:  spreading threshold, immunization strategies, and vaccination noise". Prepared in compliance with APS Data Availability Policy.
-
 # Data and Code for "Spreading processes on heterogeneous active systems: spreading threshold, immunization strategies, and vaccination noise"
 
 This repository contains the datasets and example code corresponding to the article:
 
 **Spreading processes on heterogeneous active systems: spreading threshold, immunization strategies, and vaccination noise**  
 *Benjamín Marcolongo, Gustavo J. Sibona, Fernando Peruani*  
-Physical Review E (2025) :contentReference[oaicite:1]{index=1}
+Physical Review E (2025) 
 
 ---
 
