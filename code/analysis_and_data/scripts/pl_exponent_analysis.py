@@ -55,8 +55,8 @@ def calculate_critical_velocities(files: Dict[str, float], folder="N=1k") -> np.
     for vel_file, alpha in file_alpha_mapping.items():
         sim_file = vel_file.replace("velocities_", "")
         # Load data
-        velocities = np.load(f"data/{folder}/{vel_file}.npy")
-        r_infi = np.load(f"data/{folder}/{sim_file}.npy") / N
+        velocities = np.load(f"../data/{folder}/{vel_file}.npy")
+        r_infi = np.load(f"../data/{folder}/{sim_file}.npy") / N
 
         velocities, r_infi = calculate_interpolation(velocities, r_infi, num=500)
 
@@ -76,7 +76,7 @@ def calculate_critical_velocities(files: Dict[str, float], folder="N=1k") -> np.
 
 
 def calculate_uniform_threshold(folder="N=1k") -> Tuple[np.array]:
-    file_path = f"data/{folder}/velocities_uniform.npy"
+    file_path = f"../data/{folder}/velocities_uniform.npy"
     velocities = np.load(file_path)
     v_c = velocities[
         threshold_detection(np.load(file_path.replace("velocities_", "")) / N)
@@ -95,7 +95,7 @@ v_critical_values = calculate_critical_velocities(file_alpha_mapping, folder="N=
 
 plt.legend()
 plt.tight_layout()
-plt.savefig("images/q-curves-end.png", dpi=300)
+plt.savefig("../images/q-curves-end.png", dpi=300)
 plt.show()
 
 # =====================================================================================#
@@ -136,5 +136,5 @@ plt.minorticks_on()
 plt.legend(fontsize=20)
 
 plt.tight_layout()
-plt.savefig("images/p_comparison.png")
+plt.savefig("../images/p_comparison.png")
 plt.show()

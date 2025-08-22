@@ -116,10 +116,10 @@ def plot_simulations(
     for vel_file, sim_file, color in zip(velocities_files, simulation_files, colors):
         print(f"Loading: {sim_file}.npy")
         try:
-            velocities, r_infi = data_loader("data/N=1k", vel_file, sim_file)
+            velocities, r_infi = data_loader("../data/N=1k", vel_file, sim_file)
             linestyle = "-"
         except:
-            velocities, r_infi = data_loader("data/N=1k", vel_file, sim_file)
+            velocities, r_infi = data_loader("../data/N=1k", vel_file, sim_file)
             linestyle = "-"
 
         v_interpolated, r_interpolated = calculate_interpolation(
@@ -200,7 +200,7 @@ if __name__ == "__main__":
 
     plt.legend(fontsize=12, loc=4)
     plt.tight_layout()
-    plt.savefig("images/n_R_simulation.png", dpi=300)
+    plt.savefig("../images/n_R_simulation.png", dpi=300)
     plt.show()
 
     # =======================================================================================#
@@ -222,5 +222,5 @@ if __name__ == "__main__":
 
     plt.legend(fontsize=12, loc=4)
     plt.tight_layout()
-    plt.savefig("images/n_R_theory.png", dpi=300)
+    plt.savefig("../images/n_R_theory.png", dpi=300)
     plt.show()

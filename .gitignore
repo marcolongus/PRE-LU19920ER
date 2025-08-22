@@ -1,0 +1,42 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg-info/
+*.so
+
+# ---- Virtual environments ----
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ---- Jupyter / IPython ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Data ----
+# raw simulation data (large files)
+data/**/*.npy
+data/**/*.npz
+
+# keep APS-required .txt files
+!data/**/*.txt
+
+# ---- Images ----
+# generated plots
+images/*.png
+images/*.jpg
+images/*.pdf
+
+# ---- System / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
