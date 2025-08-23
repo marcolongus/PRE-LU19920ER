@@ -21,17 +21,17 @@ ENV/
 
 # ---- Data ----
 # raw simulation data (large files)
-data/**/*.npy
-data/**/*.npz
+# data/**/*.npy
+# data/**/*.npz
 
 # keep APS-required .txt files
 !data/**/*.txt
 
 # ---- Images ----
 # generated plots
-images/*.png
-images/*.jpg
-images/*.pdf
+# images/*.png
+# images/*.jpg
+# images/*.pdf
 
 # ---- System / IDE ----
 .DS_Store

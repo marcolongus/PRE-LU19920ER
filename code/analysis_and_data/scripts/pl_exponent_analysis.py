@@ -93,6 +93,7 @@ plt.ylabel(r"$R_{\infty}$")
 plt.xlabel(r"$\langle v_c^{PL} \rangle$")
 v_critical_values = calculate_critical_velocities(file_alpha_mapping, folder="N=1k")
 
+
 plt.legend()
 plt.tight_layout()
 plt.savefig("../images/q-curves-end.png", dpi=300)
@@ -102,6 +103,7 @@ plt.show()
 # PLOTS SIMULATIONS q-curve
 # =====================================================================================#
 velocities, v_c = calculate_uniform_threshold(folder="N=1k")
+
 plt.plot(
     list(file_alpha_mapping.values()),
     np.array(v_critical_values) / v_c,
@@ -113,6 +115,9 @@ plt.scatter(
     list(file_alpha_mapping.values()), v_critical_values / v_c, color="black", s=70
 )
 
+q_values_array = np.array(list(file_alpha_mapping.values()))
+np.save("q_values_array.npy", q_values_array)
+np.save("v_critic_sim.npy", np.array(v_critical_values) / v_c)
 
 # =====================================================================================#
 # PLOTS THEORETICAL  q-curve

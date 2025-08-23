@@ -30,15 +30,15 @@ Below is the minimal explanation of each data file and its columns:
   - col 4: ⟨n_R⟩ for power-law distribution  
 
 - **Fig1_panel_c.txt**  
-  - col 1: ⟨v⟩ (average active speed) 
-  - col 2: ⟨n_R⟩ (curve single-value distribution)  
-  - col 3: ⟨n_R⟩ (curve exponential distribution)  
-  - col 4: ⟨n_R⟩ (curve power-law distribution)  
+  - col 1: ⟨v⟩ (average active speed same as prev panel.)    
+  - col 2: ⟨n_R⟩ for single-value distribution   (calculated directly, see data_analysis.py in code section.) 
+  - col 3: ⟨n_R⟩ for exponential distribution   (calculated directly, see data_analysis.py in code section.) 
+  - col 4: ⟨n_R⟩ for power-law distribution  (calculated directly, see data_analysis.py in code section.) 
 
 - **Fig1_panel_d.txt**  
-  - col 1: ⟨v⟩ (normalized critical average active speed)
-  - col 2: ⟨n_R⟩ (simulation)  
-  - col 3: ⟨n_R⟩ (theory)  
+  - col 1: q (power law exponent)
+  - col 2: ⟨~V⟩^p_c (simulation)  
+  - col 3: ⟨~V^p⟩_c (theory) - (calculated directly, see pl_exponent_analysis.py in code section.)  
 
 - **Fig2_panel_a.txt**  
   - col 1: fraction of vaccinated population (f = N_v / N)  
