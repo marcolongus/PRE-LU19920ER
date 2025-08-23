@@ -8,6 +8,7 @@ Physical Review E (2025)
 
 ---
 ## Folder Structure
+```text
 PRE-LU19920ER/
 ├── data/                         # TXT files with tab-separated columns
 ├── code/
@@ -17,7 +18,7 @@ PRE-LU19920ER/
 │   │   └── images/               # auxiliary figures
 │   └── agents_simulation/        # C++ source + headers for simulations
 └── README.md
-
+```
 ---
 
 ## Repository Structure
