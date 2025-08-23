@@ -57,7 +57,7 @@ PRE-LU19920ER/
 │   └── agents_simulation/        # C++ source + headers for simulations
 └── README.md
 ```
-<\details>
+
 ---
 
 ## Repository Structure
