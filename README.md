@@ -64,7 +64,7 @@ Below is the minimal explanation of each data file and its columns:
 
 1. The `.txt` files can be loaded with Python (`pandas.read_csv`), MATLAB, R, or any other data analysis software.  
 2. Each file corresponds to one panel of the figures in the article.  
-3. To regenerate the figures, run the scripts provided in `code/` (Python ≥ 3.9, NumPy, Matplotlib required).  
+3. To regenerate the figures, run the scripts provided in `code/` (Python ≥ 3.9, NumPy).  
 
 ---
 
