@@ -19,16 +19,24 @@ Physical Review E (2025)
 ```text
 ├── code/
 │   ├── agents_simulation/
-│   │   ├── agentes.cpp:contentReference[oaicite:0]{index=0}
-│   │   ├── makefile.py:contentReference[oaicite:1]{index=1}
+│   │   ├── agentes.cpp
+│   │   ├── makefile.py
 │   │   └── headers/
-│   │       ├── agentes.h:contentReference[oaicite:2]{index=2}
-│   │       ├── classparticle.h:contentReference[oaicite:3]{index=3}
-│   │       └── parameters.h:contentReference[oaicite:4]{index=4}
+│   │       ├── agentes.h
+│   │       ├── classparticle.h
+│   │       └── parameters.h
 │   └── analysis_and_data/
-│       ├── README_scripts.md:contentReference[oaicite:5]{index=5}
-│       ├── fig_txt_geneartor.ipynb:contentReference[oaicite:6]{index=6}
+│       ├── README_scripts.md
+│       ├── fig_txt_geneartor.ipynb
 │       ├── data/
+│       │   ├── N=1k/ # figures data *.npy
+│       │   ├── N=5k/ # figures data *.npy
+│       │   ├── N=10k/ # figures data *.npy
+│       ├── images/ # generated images
+│       └── scripts/
+│           ├── data_analysis.py
+│           ├── pl_exponent_analysis.py
+│           └── plot_collapse.py
 ```
 ---
 
