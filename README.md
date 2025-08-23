@@ -6,6 +6,44 @@ This repository contains the datasets and example code corresponding to the arti
 *Benjamín Marcolongo, Gustavo J. Sibona, Fernando Peruani*  
 Physical Review E (2025)
 
+## Repository Structure
+
+<details>
+<summary>Click to expand the full repository tree</summary>
+
+```text
+PRE-LU19920ER/
+├── data/                         # TXT files with tab-separated columns
+│   ├── Fig1_panel_b.txt
+│   ├── Fig1_panel_c.txt
+│   ├── Fig1_panel_d.txt
+│   ├── Fig2_panel_a.txt
+│   ├── Fig2_panel_b.txt
+│   ├── Fig2_panel_c.txt
+│   └── Fig2_panel_d.txt
+├── code/
+│   ├── agents_simulation/        # C++ source + headers for simulations
+│   │   ├── agentes.cpp
+│   │   ├── Makefile
+│   │   └── headers/
+│   │       ├── agentes.h
+│   │       ├── classparticle.h
+│   │       └── parameters.h
+│   └── analysis_and_data/        # analysis scripts + auxiliary data
+│       ├── README_scripts.md
+│       ├── fig_txt_generator.ipynb
+│       ├── data/
+│       │   ├── N=1k/             # intermediate .npy files
+│       │   ├── N=5k/
+│       │   └── N=10k/
+│       ├── images/               # generated images
+│       └── scripts/
+│           ├── data_analysis.py
+│           ├── pl_exponent_analysis.py
+│           └── plot_collapse.py
+└── README.md
+```
+
 ---
 ## Folder Structure
 ```text
