@@ -122,6 +122,7 @@ np.save("v_critic_sim.npy", np.array(v_critical_values) / v_c)
 # =====================================================================================#
 # PLOTS THEORETICAL  q-curve
 # =====================================================================================#
+np.save("v_critic_theo.npy", alpha_curve(q_values_array))
 tick_fontsize = 20
 label_fontsize = 30
 

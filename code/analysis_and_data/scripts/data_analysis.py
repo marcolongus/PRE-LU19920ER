@@ -150,11 +150,16 @@ def plot_theoretical(
     N: float = 1,
 ) -> None:
 
+    labels_dist = cycle(["uniform", "exponential", "power-law (q=4)"])
     for v_thresh, outbreak, v_square, eps in zip(
         v_thresholds, outbreak_size, second_moment, epsilon
     ):
         v_theo = np.arange(0.01, v_thresh, eps)
         r_theo = outbreak(v_theo)
+
+        actual_label = next(labels_dist)
+        np.save(f"v_theo_{actual_label}.npy", v_theo)
+        np.save(f"r_theo_{actual_label}.npy", r_theo)
 
         plt.plot(
             v_theo,
