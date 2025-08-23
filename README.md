@@ -7,6 +7,17 @@ This repository contains the datasets and example code corresponding to the arti
 Physical Review E (2025)
 
 ---
+## Folder Structure
+PRE-LU19920ER/
+├── data/                         # TXT files with tab-separated columns
+├── code/
+│   ├── analysis_and_data/        # analysis scripts + auxiliary data
+│   │   ├── scripts/              # python scripts 
+│   │   ├── data/ (N=1k,5k,10k)   # intermediate .npy files
+│   │   └── images/               # auxiliary figures
+│   └── agents_simulation/        # C++ source + headers for simulations
+└── README.md
+
 
 ## Repository Structure
 
