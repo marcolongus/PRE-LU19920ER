@@ -54,10 +54,10 @@ Below is the minimal explanation of each data file and its columns:
   - col 4: ⟨n_R⟩ for power-law distribution  
 
 - **Fig1_panel_c.txt**  
-  - col 1: ⟨v⟩ (average active speed same as prev panel.)    
-  - col 2: ⟨n_R⟩ for single-value distribution   (calculated directly, see data_analysis.py in code section.) 
-  - col 3: ⟨n_R⟩ for exponential distribution   (calculated directly, see data_analysis.py in code section.) 
-  - col 4: ⟨n_R⟩ for power-law distribution  (calculated directly, see data_analysis.py in code section.) 
+  - col 1-3: ⟨v⟩ (average active speed for single, exponential, power-law)    
+  - col 4: ⟨n_R⟩ for single-value distribution   (calculated directly, see data_analysis.py in code section.) 
+  - col 5: ⟨n_R⟩ for exponential distribution   (calculated directly, see data_analysis.py in code section.) 
+  - col 6: ⟨n_R⟩ for power-law distribution  (calculated directly, see data_analysis.py in code section.) 
 
 - **Fig1_panel_d.txt**  
   - col 1: q (power law exponent)
