@@ -13,7 +13,11 @@ Physical Review E (2025)
 - `data/`  
   Plain text files (`.txt`) with the numerical data used to generate each figure panel.  
   Each file has tab-separated columns with a header line.
-  
+```text
+├── data/
+│   ├── Fig1_panel_b.txt:contentReference[oaicite:52]{index=52}
+│   └── Fig1_panel_d.txt:contentReference[oaicite:53]{index=53}
+```
 - `code/`  
   Example scripts used to generate the figures and perform the simulations.  
 ```text
@@ -31,7 +35,7 @@ Physical Review E (2025)
 │       ├── data/
 │       │   ├── N=1k/ # figures data *.npy
 │       │   ├── N=5k/ # figures data *.npy
-│       │   ├── N=10k/ # figures data *.npy
+│       │   └── N=10k/ # figures data *.npy
 │       ├── images/ # generated images
 │       └── scripts/
 │           ├── data_analysis.py
