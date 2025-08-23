@@ -15,8 +15,8 @@ Physical Review E (2025)
   Each file has tab-separated columns with a header line.
 ```text
 ├── data/
-│   ├── Fig1_panel_b.txt:contentReference[oaicite:52]{index=52}
-│   └── Fig1_panel_d.txt:contentReference[oaicite:53]{index=53}
+│   ├── Fig1_panel_b.txt
+│   └── Fig1_panel_d.txt
 ```
 - `code/`  
   Example scripts used to generate the figures and perform the simulations.  
