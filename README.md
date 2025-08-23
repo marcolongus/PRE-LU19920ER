@@ -42,7 +42,7 @@ PRE-LU19920ER/
 │           ├── pl_exponent_analysis.py
 │           └── plot_collapse.py
 └── README.md
-```
+<\details>```
 
 ---
 ## Folder Structure
