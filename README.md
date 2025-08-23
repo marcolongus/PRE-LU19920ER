@@ -8,9 +8,6 @@ Physical Review E (2025)
 
 ## Repository Structure
 
-<details>
-<summary>Click to expand the full repository tree</summary>
-
 ```text
 PRE-LU19920ER/
 ├── data/                         # TXT files with tab-separated columns
@@ -42,58 +39,7 @@ PRE-LU19920ER/
 │           ├── pl_exponent_analysis.py
 │           └── plot_collapse.py
 └── README.md
-<\details>
-```
 
----
-## Folder Structure
-```text
-PRE-LU19920ER/
-├── data/                         # TXT files with tab-separated columns
-├── code/
-│   ├── analysis_and_data/        # analysis scripts + auxiliary data
-│   │   ├── scripts/              # python scripts 
-│   │   ├── data/ (N=1k,5k,10k)   # intermediate .npy files
-│   │   └── images/               # auxiliary figures
-│   └── agents_simulation/        # C++ source + headers for simulations
-└── README.md
-```
-
----
-
-## Repository Structure
-
-- `data/`  
-  Plain text files (`.txt`) with the numerical data used to generate each figure panel.  
-  Each file has tab-separated columns with a header line.
-```text
-├── data/
-│   ├── Fig1_panel_b.txt
-│   └── Fig1_panel_d.txt
-```
-- `code/`  
-  Example scripts used to generate the figures and perform the simulations.  
-```text
-├── code/
-│   ├── agents_simulation/
-│   │   ├── agentes.cpp
-│   │   ├── makefile.py
-│   │   └── headers/
-│   │       ├── agentes.h
-│   │       ├── classparticle.h
-│   │       └── parameters.h
-│   └── analysis_and_data/
-│       ├── README_scripts.md
-│       ├── fig_txt_geneartor.ipynb
-│       ├── data/
-│       │   ├── N=1k/ # figures data *.npy
-│       │   ├── N=5k/ # figures data *.npy
-│       │   └── N=10k/ # figures data *.npy
-│       ├── images/ # generated images
-│       └── scripts/
-│           ├── data_analysis.py
-│           ├── pl_exponent_analysis.py
-│           └── plot_collapse.py
 ```
 ---
 
