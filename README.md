@@ -105,6 +105,48 @@ Below is the minimal explanation of each data file and its columns:
 3. To regenerate the figures, run the scripts provided in `code/` (Python ≥ 3.9, NumPy).  
 
 ---
+## Simulation Details
+
+The raw data in `code/data_and_analysis/data/` (e.g. `N=1k/`, `N=5k/`) were produced using agent-based simulations of **active particles** with heterogeneous speed distributions. The simulations correspond to the scenarios analyzed in the article.
+
+### Model parameters
+- **System size (N):** typical runs use *N = 10³* and *N = 5×10³* particles (stored in `N=1k/` and `N=5k/`).
+- **Density (ρ):** fixed at ρ = 1000 / 150², so that linear system size *L* varies consistently with *N* to keep ρ constant.
+- **Interaction time (τᵢ):** 200.
+- **Interaction cross-section (σ):** 4.
+- **Composite parameter (Φ):** Φ = 1.4 · ρ · σ · τᵢ, used to determine analytical thresholds.
+- **Critical velocities:**  
+  - Uniform: v_c = 2 / Φ  
+  - Exponential: v_c = 1 / Φ  
+  - Power law (q=4): v_c = (3/4) · (2/Φ)
+
+### Speed distributions
+Three classes of active speed distributions were simulated:
+1. **Single-value (uniform/Dirac)**  
+2. **Exponential**  
+3. **Power law** with varying exponent q (commonly q = 4, also explored q = 3.1–10).
+
+### Simulation outputs
+Each run produces `.npy` arrays containing:
+- `velocities_*.npy` → average active speeds ⟨v⟩ (x-axis values).  
+- `uniform.npy`, `exponential.npy`, `power_law_alpha=*.npy` → epidemic sizes ⟨n_R⟩ (y-axis values) for the corresponding distribution.  
+
+The **analysis scripts** load these arrays, interpolate them, and compare against theoretical predictions.
+
+### Vaccination strategies
+For Fig. 2 in the article:
+- **RVS**: Random Vaccination Strategy (uniform random choice of vaccinated agents).  
+- **DVS**: Directed Vaccination Strategy (targeted vaccination by activity).  
+- Fractions of vaccinated agents *f = N_v / N* are varied (0–30%).  
+- Simulation outputs (histograms and average epidemic sizes) are converted into `.txt` files for each panel.
+
+---
+
+### Notes
+- The top-level `data/` folder contains the **minimal APS-compliant `.txt` files**, with one file per figure panel.  
+- Insets in the article can be reconstructed from the central curves; they are not stored separately.  
+- Error bars were omitted in the public `.txt` to simplify reproducibility (as allowed by APS policy).
+
 
 ## Citation
 
