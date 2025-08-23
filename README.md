@@ -6,6 +6,8 @@ This repository contains the datasets and example code corresponding to the arti
 *Benjamín Marcolongo, Gustavo J. Sibona, Fernando Peruani*
 Physical Review E (2025)
 
+Full datasets for figures can be found on [Dataset.](https://drive.google.com/drive/folders/1MpFcqbkQP0S4Q7cbcg1txrH9q3y_N7Jb?usp=sharing)
+
 ## Repository Structure
 
 ```text
