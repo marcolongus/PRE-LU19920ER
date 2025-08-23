@@ -12,11 +12,24 @@ Physical Review E (2025)
 
 - `data/`  
   Plain text files (`.txt`) with the numerical data used to generate each figure panel.  
-  Each file has tab-separated columns with a header line.  
-
+  Each file has tab-separated columns with a header line.
+  
 - `code/`  
   Example scripts used to generate the figures and perform the simulations.  
-
+```text
+├── code/
+│   ├── agents_simulation/
+│   │   ├── agentes.cpp:contentReference[oaicite:0]{index=0}
+│   │   ├── makefile.py:contentReference[oaicite:1]{index=1}
+│   │   └── headers/
+│   │       ├── agentes.h:contentReference[oaicite:2]{index=2}
+│   │       ├── classparticle.h:contentReference[oaicite:3]{index=3}
+│   │       └── parameters.h:contentReference[oaicite:4]{index=4}
+│   └── analysis_and_data/
+│       ├── README_scripts.md:contentReference[oaicite:5]{index=5}
+│       ├── fig_txt_geneartor.ipynb:contentReference[oaicite:6]{index=6}
+│       ├── data/
+```
 ---
 
 ## Data Files Description
