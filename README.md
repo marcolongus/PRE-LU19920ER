@@ -147,6 +147,21 @@ For Fig. 2 in the article:
 - Insets in the article can be reconstructed from the central curves; they are not stored separately.  
 - Error bars were omitted in the public `.txt` to simplify reproducibility (as allowed by APS policy).
 
+## Key Parameters
+
+| Symbol | Meaning                         | Value / Expression                 | Notes |
+|--------|---------------------------------|------------------------------------|-------|
+| **N**  | System size (agents)            | 10³ (`N=1k`) and 5×10³ (`N=5k`)    | Defines the number of active particles |
+| **ρ**  | Particle density                | ρ = 1000 / 150²                     | Kept constant while varying N (L scales accordingly) |
+| **τᵢ** | Interaction time                | 200                                | Recovery / infection duration |
+| **σ**  | Interaction cross-section       | 4                                  | Effective interaction radius |
+| **Φ**  | Composite parameter             | Φ = 1.4 · ρ · σ · τᵢ                | Controls epidemic thresholds |
+| **v_c (uniform)**     | Critical velocity for single-value distribution | v_c = 2 / Φ       | |
+| **v_c (exponential)** | Critical velocity for exponential distribution  | v_c = 1 / Φ       | |
+| **v_c (power law)**   | Critical velocity for power-law (q=4)           | v_c = (3/4) · (2/Φ) | General q handled in analysis (`pl_exponent_analysis.py`) |
+| **q**  | Power-law exponent               | Typically 4 (also 3.1–10 explored) | Determines heterogeneity of speeds |
+| **f**  | Vaccinated fraction              | f = N_v / N (0–0.3 in main figures)| Used for Random (RVS) and Directed (DVS) strategies |
+
 
 ## Citation
 
